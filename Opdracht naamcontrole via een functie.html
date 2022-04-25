@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functies Lucas Galle</title>
+</head>
+<body>
+    
+    <h1>Fucnties in JavaScript</h1>
+
+
+
+<script>
+
+let voornaam;
+let achternaam;
+
+let controle = (invoer) => {
+    if (invoer == null){
+        document.write("Er is geannuleerd");
+        return false;
+    } else if (invoer == ""){
+        document.write("Er is niets ingegeven");
+        return false;
+    } else if (invoer.length < 2) {
+        document.write("Er zijn minder dan 2 karakters ingegeven");
+        return false;
+    } else {
+        let eersteHoofdletter = invoer.charAt(0).toUpperCase();
+        let rest = invoer.substring(1);
+        let naamTotaal = eersteHoofdletter + rest;
+        return naamTotaal;
+    }
+
+}
+
+voornaam = prompt("Wat is je voornaam");
+let voornaamCheck = controle(voornaam);
+
+if (voornaamCheck != false){
+    achternaam = prompt("Wat is je achternaam");
+    let achternaamCheck = controle(achternaam);
+    if (achternaamCheck != false){
+        document.write(`<p>Dit is jouw naam: ${voornaamCheck} ${achternaamCheck}</p>`);
+    }
+}
+
+
+</script>
+
+</body>
+</html>

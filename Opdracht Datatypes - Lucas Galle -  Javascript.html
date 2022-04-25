@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+</head>
+
+<body>
+
+	<h1>Opdracht Datatypes - Lucas Galle -  Javascript</h1>
+
+
+<script language="javascript">
+
+let naam = prompt("Wat is de naam van het tijdschrift?");
+let kostprijs = prompt("Wat is de kostprijs van het tijdschrift?");
+let aantal = prompt("Hoeveel stuks wens je aan te kopen?");
+let totaal = parseFloat(aantal) * parseFloat(kostprijs);
+
+document.write(`<p>Het tijdschrift is: ${naam}, het type ervan is ${typeof naam}</p>`);
+document.write(`<p>De kostprijs van 1 exemplaar is ${kostprijs}, het type hiervan is ${typeof kostprijs}</p>`);
+document.write(`<p>Het aantal exemplaren dat je wil kopen is: ${aantal}, het type ervan is ${typeof aantal}</p>`);
+document.write(`De totale kostprijs is: ${totaal}`);
+
+
+
+
+
+</script>
+</body>
+</html>
